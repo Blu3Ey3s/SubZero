@@ -29,7 +29,7 @@ LOGO = rf'''{Fore.BLUE}
 
 
 def is_host_alive(host):
-    """Проверяет доступность хоста по HTTP"""
+    """Проверяет доступность хоста по HTTP/HTTPS"""
     try:
         response = requests.get(f"http://{host}", timeout=10)
         return response.status_code in [200, 302, 401, 403, 405, 407, 423]  # Проверяем 20x или 30x
