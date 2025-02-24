@@ -1,6 +1,5 @@
 import re
 import requests
-import socket
 import concurrent.futures
 import argparse
 from colorama import Fore, Style, init
@@ -10,6 +9,9 @@ import urllib.parse
 from urllib.parse import urlparse
 import random
 import hashlib
+
+
+
 
 API_KEY = ''
 ALL_Alive_Subdomains = set()
